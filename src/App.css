@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 10% 80%;
+  grid-template-areas:
+    "header header header header"
+    "sidebar main main main"
+    "sidebar main main main"
+    "footer footer footer footer";
+}
+
+.headerDiv {
+  background-color: chartreuse;
+  grid-area: header;
+}
+.nav {
+  background-color: coral;
+  grid-area: sidebar;
+}
+.routes {
+  grid-area: main;
+  background-color: crimson;
+}
+.footer {
+  background-color: cornflowerblue;
+  grid-area: footer;
+}
